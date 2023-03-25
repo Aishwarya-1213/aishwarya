@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form</title>
+
+
+    </head>
+    <body>
+        <h1>user form</h1>
+
+        <form id="userform">
+            <label for="name">Name:</label>
+            <input id="name" type="text"><br><br>
+            <label for="name">Email:</label>
+            <input id="email" type="email" required><br><br>
+            <label  for="name">Phone:</label>
+            <input id=" phone" type="tel" name="phone" required>
+            <br><br>
+            <input type="submit" value="Submit" onclick="submit()">
+
+        </form>
+
+    </body>
+
+    <script>
+        function submit(){
+        const name =document.getElementById("name").value
+        const email =document.getElementById("email").value
+        const phone =document.getElementById("phone").value
+        
+            if (name=="john" & email=="john@john.com" & phone=="9090909090"
+)
+            alert("user found")
+            else
+            alert("user created sucessfully")
+        }
+    </script>
+
+</html>
